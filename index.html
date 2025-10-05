@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3DES Encryption Demo</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- CryptoJS Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>🔐 Triple DES (3DES) Encryption Demo</h1>
+
+    <label for="plaintext">Plaintext:</label>
+    <textarea id="plaintext" placeholder="Enter text to encrypt..."></textarea>
+
+    <label for="key">Key / Passphrase:</label>
+    <input type="text" id="key" placeholder="Enter 24-character key" maxlength="24" />
+
+    <div class="buttons">
+      <button onclick="encryptText()">Encrypt</button>
+      <button onclick="decryptText()">Decrypt</button>
+    </div>
+
+    <h3>🔸 Encrypted (Base64):</h3>
+    <textarea id="ciphertext" readonly></textarea>
+
+    <h3>🔹 Decrypted Text:</h3>
+    <textarea id="decrypted" readonly></textarea>
+
+    <footer>
+      <p>Developed by Abhilash — 3DES Frontend Demo</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
